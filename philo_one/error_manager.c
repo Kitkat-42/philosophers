@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   error_manager.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seojeong <seojeong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: seojeong <seojeong@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/10 18:31:56 by seojeong            #+#    #+#             */
-/*   Updated: 2022/01/11 17:22:50 by seojeong           ###   ########.fr       */
+/*   Created: 2022/01/10 18:31:56 by seojeong          #+#    #+#             */
+/*   Updated: 2022/01/31 15:37:28 by seojeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	write_error(char *str)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	while (str[len])

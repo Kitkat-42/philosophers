@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seojeong <seojeong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: seojeong <seojeong@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/10 18:47:47 by seojeong            #+#    #+#             */
-/*   Updated: 2022/01/22 10:36:46 by seojeong           ###   ########.fr       */
+/*   Created: 2022/01/10 18:47:47 by seojeong          #+#    #+#             */
+/*   Updated: 2022/01/31 15:40:16 by seojeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	init_semaphore(t_rules *rules)
 
 int	init_philosophers(t_rules *rules)
 {
-	int i;
+	int	i;
 
 	i = rules->nb_philo;
 	while (--i >= 0)

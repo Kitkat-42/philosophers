@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   launcher.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seojeong <seojeong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: seojeong <seojeong@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 15:19:34 by seojeong            #+#    #+#             */
-/*   Updated: 2022/01/22 11:31:26 by seojeong           ###   ########.fr       */
+/*   Created: 2022/01/12 15:19:34 by seojeong          #+#    #+#             */
+/*   Updated: 2022/01/31 15:47:02 by seojeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	philo_eats(t_philosopher *philo)
 {
-	t_rules *rules;
+	t_rules	*rules;
 
 	rules = philo->rules;
 	sem_wait(rules->forks);
@@ -110,7 +110,7 @@ void	exit_launcher(t_rules *rules)
 	sem_unlink("/philo_mealcheck");
 }
 
-int		launcher(t_rules *rules)
+int	launcher(t_rules *rules)
 {
 	int				i;
 	t_philosopher	*phi;

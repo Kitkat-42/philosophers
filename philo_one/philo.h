@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seojeong <seojeong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: seojeong <seojeong@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/10 18:30:58 by seojeong            #+#    #+#             */
-/*   Updated: 2022/01/22 10:14:00 by seojeong           ###   ########.fr       */
+/*   Created: 2022/01/10 18:30:58 by seojeong          #+#    #+#             */
+/*   Updated: 2022/01/31 15:39:49 by seojeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 # include <string.h>
 # include <pthread.h>
 
-struct s_rules;
+struct	s_rules;
 
-typedef	struct			s_philosopher
+typedef struct	s_philosopher
 {
 	int					id;
 	int					x_ate;
@@ -33,7 +33,7 @@ typedef	struct			s_philosopher
 	pthread_t			thread_id;
 }						t_philosopher;
 
-typedef struct			s_rules
+typedef struct	s_rules
 {
 	int					nb_philo;
 	int					time_death;

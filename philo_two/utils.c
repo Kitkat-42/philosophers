@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seojeong <seojeong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: seojeong <seojeong@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/10 18:59:07 by seojeong            #+#    #+#             */
-/*   Updated: 2022/01/17 17:58:02 by seojeong           ###   ########.fr       */
+/*   Created: 2022/01/10 18:59:07 by seojeong          #+#    #+#             */
+/*   Updated: 2022/01/31 15:40:48 by seojeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long int	n;
 	int			sign;
@@ -48,9 +48,9 @@ long long	time_diff(long long past, long long pres)
 	return (pres - past);
 }
 
-void		smart_sleep(long long time, t_rules *rules)
+void	smart_sleep(long long time, t_rules *rules)
 {
-	long long i;
+	long long	i;
 
 	i = timestamp();
 	while (!(rules->dieded))
@@ -61,7 +61,7 @@ void		smart_sleep(long long time, t_rules *rules)
 	}
 }
 
-void		action_print(t_rules *rules, int id, char *string)
+void	action_print(t_rules *rules, int id, char *string)
 {
 	sem_wait(rules->writing);
 	if (!(rules->dieded))

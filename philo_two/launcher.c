@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   launcher.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seojeong <seojeong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: seojeong <seojeong@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 15:19:34 by seojeong            #+#    #+#             */
-/*   Updated: 2022/01/22 10:38:20 by seojeong           ###   ########.fr       */
+/*   Created: 2022/01/12 15:19:34 by seojeong          #+#    #+#             */
+/*   Updated: 2022/01/31 15:42:57 by seojeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	philo_eats(t_philosopher *philo)
 {
-	t_rules *rules;
+	t_rules	*rules;
 
 	rules = philo->rules;
 	sem_wait(rules->forks);
@@ -57,7 +57,7 @@ void	*p_thread(void *void_philosopher)
 
 void	exit_launcher(t_rules *rules, t_philosopher *philos)
 {
-	int i;
+	int	i;
 
 	i = -1;
 	while (++i < rules->nb_philo)
@@ -72,7 +72,7 @@ void	exit_launcher(t_rules *rules, t_philosopher *philos)
 
 void	death_checker(t_rules *r, t_philosopher *p)
 {
-	int i;
+	int	i;
 
 	while (!(r->all_ate))
 	{
@@ -98,7 +98,7 @@ void	death_checker(t_rules *r, t_philosopher *p)
 	}
 }
 
-int		launcher(t_rules *rules)
+int	launcher(t_rules *rules)
 {
 	int				i;
 	t_philosopher	*phi;
